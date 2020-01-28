@@ -1,0 +1,13 @@
+.send {
+  width: 70%;
+  height: 100px;
+}
+.input {
+  width: 70%;
+  height: 150px;
+  font-size: 48px;
+}
+.confirm-student {
+  width: 120px;
+  height: 30px;
+}

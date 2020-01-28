@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Опоздание - beta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="./libs/jquery.js"></script>
+    <script>
+        //  Must be used without form submission in index.php
+    //     $(".confirm-student").on("click",function(element){
+    //         console.log(this.value);
+    //         console.log(this.name);
+    //         $.ajax({
+    //             url: "http://localhost/china/record-violation.php?" + this.name + "=" + this.value,
+    //             type: 'GET',
+    //             success: function(res, status) {
+    //                 console.log(res);
+    //                 alert(status);
+    //                 // if (status="success"){
+    //                 //     window.location.replace("http://localhost/china/");
+    //                 // }
+    //             }
+    //         });
+    //     })
+    // </script>
+</head>
+<body>
+    <p>
+        Фамилия
+        <form action="index.php" method="POST">
+            <input type="text" name="surname" class="input"><br><br>
+
+            <button type="submit" name="send_late" class="send">Опоздал</button><br><br>
+            <button type="submit" name="send_card" class="send">Забыл карточку</button><br><br>
+            <button type="submit" name="send_latecard" class="send">Опоздал + Забыл карточку</button><br><br>
+        </form>
+    </p>
+    
+</body>
+</html>
